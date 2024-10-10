@@ -1,6 +1,6 @@
 /* General Styling for Body and Header */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,7 +45,7 @@ nav {
 }
 
 .logo img {
-  height: 50px;
+  height: 60px;
   transition: transform 0.3s ease;
 }
 
@@ -161,18 +161,33 @@ nav ul li a:hover {
 }
 
 /* About Us Section */
-.about-us {
-  padding: 80px;
-  background-color: #fff;
-  text-align: center;
-  color: #333;
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
 }
 
-.about-us h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 600;
-  animation: fadeInRight 1s ease;
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text h2,
+.about-text h3,
+.about-text p,
+.about-text ul {
+  margin: 0 0 15px;
 }
 
 @keyframes fadeInRight {
@@ -369,7 +384,6 @@ footer p {
   color: #ccc;
 }
 
-
 /* Hamburger Menu Styling */
 .menu-icon {
   display: none;
@@ -389,59 +403,135 @@ footer p {
 /* Media Query for Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   nav ul {
-      display: none;
-      flex-direction: column;
-      background-color: white;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      padding: 10px 0;
-      text-align: right;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px 0;
+    text-align: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   nav ul.open {
-      display: flex;
+    display: flex;
   }
 
   nav ul li {
-      padding: 10px 20px;
-      margin: 0;
+    padding: 10px 20px;
+    margin: 0;
   }
 
   nav ul li a {
-      font-size: 1.3rem;
-      padding: 10px;
+    font-size: 1.3rem;
+    padding: 10px;
   }
 
   .menu-icon {
-      display: flex;
+    display: flex;
   }
 
   .hero {
-      flex-direction: column;
-      padding: 60px 20px;
+    flex-direction: column;
+    padding: 60px 20px;
   }
-  .hero button{
+  .hero button {
     padding-bottom: 10px;
   }
-  .hero img{
+  .hero img {
     margin-top: 30px;
     padding-top: 10px;
     border: none;
   }
 
   .hero-content h1 {
-      font-size: 2.2rem;
+    font-size: 2.2rem;
+  }
+  .about-content {
+    flex-direction: column; 
   }
 
-  .service-cards, .industry-cards, .testimonials-content {
-      flex-direction: column;
+  .about-text {
+    text-align: left; 
   }
 
-  .service-card, .industry-card, .testimonial {
-      flex-basis: 100%;
-      margin-bottom: 20px;
+  .service-cards,
+  .industry-cards,
+  .testimonials-content {
+    flex-direction: column;
+  }
+
+  .service-card,
+  .industry-card,
+  .testimonial {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* Team Section Styles */
+.team {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for small screens */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid */
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.team-member:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+/* Grid for larger screens */
+@media (min-width: 768px) {
+  .team-members {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-members {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
   }
 }
