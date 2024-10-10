@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     changeActiveLink();
     window.addEventListener("scroll", changeActiveLink);
 });
+function toggleMenu() {
+    var navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('open');
+}

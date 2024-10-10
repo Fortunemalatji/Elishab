@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eliashib Group is a strategic investment company offering innovative solutions across various sectors.">
+    <meta name="keywords"
+        content="Investment, Consulting, Design, Development, Technology, Healthcare, Finance, Construction, Energy">
     <title>Eliashib Company Profile</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -12,8 +16,16 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="icon.JPG" alt=""></div>
-            <ul>
+            <div class="logo"><img src="icon.JPG" alt="Eliashib Group Logo"></div>
+
+            <!-- Hamburger menu icon for small screens -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul id="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
@@ -21,9 +33,9 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <!--<button class="btn">Get Started</button>-->
         </nav>
     </header>
+
 
 
     <!-- Hero Section -->
@@ -41,37 +53,43 @@
     </section>
 
     <!-- About Us Section -->
-<section class="about-us" id="about">
-    <h2>About Us</h2>
-    <p>Eliashib Group is a leading diversified investment company dedicated to providing high-quality, customized solutions across various sectors. With years of experience in strategic investments, we leverage our expertise to empower businesses and drive sustainable growth.</p>
-    
-    <h3>Our Mission</h3>
-    <p>Our mission is to deliver exceptional value to our clients through innovative solutions, strategic partnerships, and a commitment to excellence.</p>
-    
-    <h3>Our Vision</h3>
-    <p>To be a global leader in investment management, recognized for our integrity, performance, and ability to create lasting value for our stakeholders.</p>
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>Eliashib Group is a leading diversified investment company dedicated to providing high-quality, customized
+            solutions across various sectors. With years of experience in strategic investments, we leverage our
+            expertise to empower businesses and drive sustainable growth.</p>
 
-    <h3>Core Values</h3>
-    <ul>
-        <li><strong>Integrity:</strong> We uphold the highest standards of integrity in all our actions.</li>
-        <li><strong>Excellence:</strong> We strive for excellence in every project we undertake.</li>
-        <li><strong>Innovation:</strong> We embrace change and continuously seek innovative solutions.</li>
-        <li><strong>Collaboration:</strong> We believe in the power of teamwork and partnership.</li>
-        <li><strong>Sustainability:</strong> We are committed to sustainable practices that benefit both our clients and the environment.</li>
-    </ul>
+        <h3>Our Mission</h3>
+        <p>Our mission is to deliver exceptional value to our clients through innovative solutions, strategic
+            partnerships, and a commitment to excellence.</p>
 
-    <h3>Industries We Serve</h3>
-    <p>We operate across various sectors, including:</p>
-    <ul>
-        <li>Technology</li>
-        <li>Healthcare</li>
-        <li>Finance</li>
-        <li>Construction</li>
-        <li>Energy</li>
-    </ul>
+        <h3>Our Vision</h3>
+        <p>To be a global leader in investment management, recognized for our integrity, performance, and ability to
+            create lasting value for our stakeholders.</p>
 
-    <p>At Eliashib Group, our goal is to build long-term relationships with our clients by understanding their needs and delivering tailored solutions that drive success.</p>
-</section>
+        <h3>Core Values</h3>
+        <ul>
+            <li><strong>Integrity:</strong> We uphold the highest standards of integrity in all our actions.</li>
+            <li><strong>Excellence:</strong> We strive for excellence in every project we undertake.</li>
+            <li><strong>Innovation:</strong> We embrace change and continuously seek innovative solutions.</li>
+            <li><strong>Collaboration:</strong> We believe in the power of teamwork and partnership.</li>
+            <li><strong>Sustainability:</strong> We are committed to sustainable practices that benefit both our clients
+                and the environment.</li>
+        </ul>
+
+        <h3>Industries We Serve</h3>
+        <p>We operate across various sectors, including:</p>
+        <ul>
+            <li>Technology</li>
+            <li>Healthcare</li>
+            <li>Finance</li>
+            <li>Construction</li>
+            <li>Energy</li>
+        </ul>
+
+        <p>At Eliashib Group, our goal is to build long-term relationships with our clients by understanding their needs
+            and delivering tailored solutions that drive success.</p>
+    </section>
 
 
     <!-- Services Section -->
