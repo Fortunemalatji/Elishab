@@ -4,101 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f0f4f8;
-            font-family: Arial, sans-serif;
-        }
-
-        .construction-container {
-            text-align: center;
-            padding: 20px;
-            max-width: 400px;
-            border-radius: 10px;
-            background: #fff;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            animation: pulse 2s infinite;
-            border: 1px solid #ffcc00;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .construction-container::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 204, 0, 0.4), transparent);
-            animation: rotate-glow 6s linear infinite;
-            z-index: -1;
-        }
-
-        .icon {
-            font-size: 3.5rem;
-            color: #ffcc00;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: #333;
-            margin-bottom: 8px;
-        }
-
-        p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /* Glow animation */
-        @keyframes rotate-glow {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Pulse animation */
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-    </style>
+    <meta name="description"
+        content="Eliashib Group is a strategic investment company offering innovative solutions across various sectors.">
+    <meta name="keywords"
+        content="Investment, Consulting, Design, Development, Technology, Healthcare, Finance, Construction, Energy">
+    <title>Eliashib Company Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="construction-container">
-        <i class="fas fa-hard-hat icon"></i>
-        <h1>Under Construction</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
-    </div>
+    <header>
+        <nav>
+            <div class="logo"><img src="GROUP.png" alt="Eliashib Group Logo"></div>
+
+            <!-- Hamburger menu icon for small screens -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Eliashib Group</h1>
+            <p>Your trusted partner in strategic investments and innovative solutions across multiple sectors.</p>
+            <p>We are committed to sustainable growth, leveraging our expertise to empower businesses and drive value.
+            </p>
+            <a href="#about" class="btn learn-more">Learn More</a>
+        </div>
+        <div class="hero-image">
+            <img src="GROUP.png" alt="Creative Workspace">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="about">
+        <div class="about-content">
+            <!-- Left column for image -->
+            <div class="about-image">
+                <img src="about.JPG" alt="About Eliashib Group">
+            </div>
+            <!-- Right column for text -->
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Eliashib Group is a leading diversified investment company dedicated to providing high-quality,
+                    customized
+                    solutions across various sectors. Through forward-looking strategies and value-added services, we
+                    aim to foster long-term growth.</p>
+
+                <h3>Our Vision</h3>
+                <p>To be a globally respected and trusted holding company with equity in leading international
+                    enterprises.</p>
+
+                <h3>Our Mission</h3>
+                <p>Deliver exceptional value through strategic investments, financial support, and innovative management
+                    solutions that empower businesses to excel.</p>
+
+                <h3>Core Values</h3>
+                <ul>
+                    <li><strong>Performance:</strong> Executional excellence is key to our success.</li>
+                    <li><strong>Passion:</strong> Innovation and continuous improvement drive us.</li>
+                    <li><strong>Integrity:</strong> We are honest, open, and ethical in all our dealings.</li>
+                    <li><strong>Diversity:</strong> We believe in the strength of diverse ideas and cultural
+                        backgrounds.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Strategic Investment</h3>
+                <p>We focus on strategic directions with great potential and offer management, financial, and
+                    operational support to our portfolio companies.</p>
+            </div>
+            <div class="service-card">
+                <h3>Financial Investment</h3>
+                <p>We provide comprehensive investment solutions, including angel investment, venture capital, and
+                    private equity, across the full lifecycle of businesses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <h2>Industries We Serve</h2>
+        <div class="industry-cards">
+            <div class="industry-card">
+                <h3>Technology</h3>
+                <p>Focused on FinTech, AgriTech, and HealthTech innovations with high impact.</p>
+            </div>
+            <div class="industry-card">
+                <h3>Building & Construction</h3>
+                <p>Driving infrastructure development in Africa, contributing to residential and commercial spaces.</p>
+            </div>
+            <div class="industry-card">
+                <h3>Healthcare</h3>
+                <p>Enhancing healthcare service delivery across Africa with technological innovations.</p>
+            </div>
+            <div class="industry-card">
+                <h3>Energy & Gas</h3>
+                <p>Providing cleaner, efficient, and affordable energy solutions to address power shortages.</p>
+            </div>
+            <div class="industry-card">
+                <h3>Mining</h3>
+                <p>Specializing in exploration, beneficiation, and marketing of commodities like chrome and coal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <h3>Stanley Phoku</h3>
+                <p>Founder & CEO</p>
+                <p>With a wealth of experience in business development and marketing, Stanley has contributed
+                    significantly to the growth of various companies like Standard Bank and Jaguar & Land Rover
+                    Sub-Saharan Africa.</p>
+            </div>
+            <div class="team-member">
+                <h3>Pedzisai Desmond Mhlanga</h3>
+                <p>Director</p>
+                <p>Over 20 years of experience in mineral exploration and consultancy, with a focus on exploration
+                    consultancy through Desgat03 Holdings.</p>
+            </div>
+            <div class="team-member">
+                <h3>James R Aguma</h3>
+                <p>Chief Financial Officer</p>
+                <p>A Chartered Accountant with over 23 years of experience in international trade, risk management, and
+                    public sector auditing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-content">
+            <div class="testimonial">
+                <p>"The team at Eliashib Company exceeded our expectations. Their solutions were timely and effective."
+                </p>
+                <span>- John Doe, CEO of TechCorp</span>
+            </div>
+            <div class="testimonial">
+                <p>"Working with them was an absolute pleasure. They delivered exactly what we needed."</p>
+                <span>- Jane Smith, Director of Healthcare Solutions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p>Address: Cnr Northumberland & Felstead Avenue, Fancourt Office Park, Building 3, 1st Floor, North Riding,
+            2188</p>
+        <p>Phone: +27 10-023-6518</p>
+        <p>Email: <a href="mailto:info@eliashibgroup.com">info@eliashibgroup.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Eliashib Group. All rights reserved.</p>
+    </footer>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
